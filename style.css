@@ -63,7 +63,7 @@ a {
 
 .leftcolumn {
     width: 75%;
-    max-width: calc(100% - 240px);
+    max-width: calc(100% - 220px);
 }
 
 .rightcolumn {
@@ -151,4 +151,42 @@ a {
  
 .close:hover { 
     background: #fed138; 
+}
+
+@media screen and (max-width:768px) {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .leftcolumn {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .rightcolumn {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card .img.--small {
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .card .modalLink:last-child .img.--small {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:425px) { 
+    h2, h3, h5, .card {
+        text-align: center;
+    }
+
+    p {
+        text-align: left;
+    }
 }
