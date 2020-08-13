@@ -189,4 +189,10 @@ a {
     p {
         text-align: left;
     }
+
+    .card .img.--small {
+        width: 75%;
+        height: 100%;
+        margin: 0;
+    }
 }
